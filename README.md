@@ -130,7 +130,7 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 📸 Real-world Implementation:
 <p align="center">
-  <img src="./IRClock/ModifiedClock.jpg" height="260"/>
+  <img src="./IR_Clock/ModifiedClock.jpg" height="260"/>
 </p>
 
 **🛠 Motor Used**:  
