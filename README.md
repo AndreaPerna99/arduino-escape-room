@@ -1,4 +1,4 @@
-# Arduino Escape Room – *L'Ufficio dello Scienziato*
+# 🧩 Arduino Escape Room – *L'Ufficio dello Scienziato*
 
 [![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) [![PCB](https://img.shields.io/badge/PCB-Designed%20with-EasyEDA-green)](https://easyeda.com/)  
 An interactive Arduino-based escape room featuring real-time puzzles, sensors, actuators, and custom-designed PCBs to create an immersive technological challenge.
@@ -19,20 +19,24 @@ Creating custom PCBs allowed for **efficient wiring**, **increased robustness**,
 
 ```
 📦 Arduino-Escape-Room/
-├── 📁 Bolobox/                            # Puzzle 1 - Scatole Enigmatiche
+├── 📁 Bolobox/
 │   ├── 🧩 Bolobox.ino
-├── 📁 IR_Clock/                           # Puzzle 3 - Il Cifratempo
-│   ├── 🧩 orologio_IR.ino
-├── 📁 LeverOpening/                       # Puzzle 2 - Gli Occhi della Verità (lever mechanism)
-│   ├── 🧩 apertura_leva.ino
-├── 📁 ObstacleDetection/                  # Puzzle 2 - Obstacle detection logic
-│   ├── 🧩 rileva_ostacoli.ino
-├── 📁 TypingMachine/                      # Puzzle 4 - Il Disegno del Destino (robot drawing)
-│   ├── 🧩 macchina_da_scrivere.ino
-├── 📁 PCBs/                               # Custom PCB schematics (EasyEDA files - not included)
-├── 📁 Images/                             # (Reserved for future images if available)
-├── 📘 Escape.pdf                           # Project overall description (Italian)
-├── 📄 README.md                            # You are here!
+│   ├── 🖼️ Bolobox_PCB.png
+│   ├── 🖼️ Bolobox_Schematic.png
+├── 📁 IR_Clock/
+│   ├── 🧩 IR_Clock.ino
+│   ├── 🖼️ Clock_PCB.png
+│   ├── 🖼️ Clock_Schematic.png
+├── 📁 Keyboard/
+│   ├── 🧩 Keyboard.ino
+│   ├── 🖼️ Keyboard_PCB.png
+│   ├── 🖼️ Keyboard_Schematic.png
+├── 📁 ObstacleDetection/
+│   ├── 🧩 ObstacleDetection.ino
+│   ├── 🖼️ ObstacleDetection_PCB.png
+│   ├── 🖼️ ObstacleDetection_Schematic.png
+├── 📘 Escape.pdf
+├── 📄 README.md
 ```
 
 ---
@@ -57,15 +61,21 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - LCD Displays
   - Arduino UNO
 - **Objective**:
-  - Clear obstacles detected by boxes.
-  - Solve a 4-variable system displayed on LCDs to extract a numeric code.
+  - Players must clear obstacles detected by four smart boxes.
+  - Solve a 4-variable system displayed on LCDs to unlock the next stage.
 
-🔧 Related Code:  
+🔧 Related Files:  
 [`Bolobox/Bolobox.ino`](./Bolobox/Bolobox.ino)
+
+📸 PCB and Schematic:
+<p align="center">
+  <img src="./Bolobox/Bolobox_PCB.png" height="230"/>
+  <img src="./Bolobox/Bolobox_Schematic.png" height="230"/>
+</p>
 
 ---
 
-### 🧩 Puzzle 2: **Gli Occhi della Verità** (The Eyes of Truth)
+### 🧩 Puzzle 2: **Gli Occhi della Verità** (The Eyes of Truth) – **Obstacle Detection Module**
 
 - **Hardware**:
   - Servo motors
@@ -74,12 +84,17 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - LCD Displays
   - Arduino MEGA
 - **Objective**:
-  - Enter the code from Puzzle 1 to unlock a mechanical box.
-  - Press wall-mounted buttons in coordination to reveal hidden messages.
+  - After entering the first code, players trigger wall buttons simultaneously.
+  - Sensors validate coordination to reveal hidden messages.
 
-🔧 Related Code:  
-[`LeverOpening/apertura_leva.ino`](./LeverOpening/apertura_leva.ino)  
-[`ObstacleDetection/rileva_ostacoli.ino`](./ObstacleDetection/rileva_ostacoli.ino)
+🔧 Related Files:  
+[`ObstacleDetection/ObstacleDetection.ino`](./ObstacleDetection/ObstacleDetection.ino)
+
+📸 PCB and Schematic:
+<p align="center">
+  <img src="./ObstacleDetection/ObstacleDetection_PCB.png" height="230"/>
+  <img src="./ObstacleDetection/ObstacleDetection_Schematic.png" height="230"/>
+</p>
 
 ---
 
@@ -90,11 +105,17 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - IR Receiver (Sony Remote Control)
   - Arduino Nano
 - **Objective**:
-  - Operate a frozen clock via IR control.
-  - Decrypt a Caesar cipher code hidden in clock movement sequences.
+  - Control a frozen clock via infrared.
+  - Decrypt the movement pattern into a hidden password.
 
-🔧 Related Code:  
-[`IR_Clock/orologio_IR.ino`](./IR_Clock/orologio_IR.ino)
+🔧 Related Files:  
+[`IR_Clock/IR_Clock.ino`](./IR_Clock/IR_Clock.ino)
+
+📸 PCB and Schematic:
+<p align="center">
+  <img src="./IR_Clock/Clock_PCB.png" height="230"/>
+  <img src="./IR_Clock/Clock_Schematic.png" height="230"/>
+</p>
 
 ---
 
@@ -103,13 +124,18 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 - **Hardware**:
   - DIY Drawing Robot
   - Magnetic whiteboard
-  - Color markers
   - Arduino Controller
 - **Objective**:
-  - A robot autonomously draws a key symbol on the whiteboard after proper initialization.
+  - Deploy a robot that autonomously draws a clue leading to the final exit.
 
-🔧 Related Code:  
-[`TypingMachine/macchina_da_scrivere.ino`](./TypingMachine/macchina_da_scrivere.ino)
+🔧 Related Files:  
+[`Keyboard/Keyboard.ino`](./Keyboard/Keyboard.ino)
+
+📸 PCB and Schematic:
+<p align="center">
+  <img src="./Keyboard/Keyboard_PCB.png" height="230"/>
+  <img src="./Keyboard/Keyboard_Schematic.png" height="230"/>
+</p>
 
 ---
 
@@ -120,17 +146,17 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 - **LCD Displays 16x2**
 - **RGB LEDs and Standard LEDs**
 - **Stepper Motors and Servo Motors**
-- **Sony Remote Control (IR Communication)**
-- **Custom PCBs designed via EasyEDA**
+- **IR Receiver Modules (Sony Remote)**
+- **Custom PCB Design with EasyEDA**
 
 ---
 
 ## 🧪 Key Learning Outcomes
 
-- Embedded system integration for real-world interactive games.
-- PCB design for robust, reliable hardware using EasyEDA.
-- Implementation of real-time sensing, decoding, and mechanical control.
-- Multistage puzzle design based on electrical engineering and software logic.
+- Full-stack embedded system development for an interactive experience.
+- PCB design to improve reliability and minimize wiring errors.
+- Real-time control systems, IR communication, ultrasonic obstacle detection, and stepper motor management.
+- Engineering storytelling and puzzle integration.
 
 ---
 
@@ -145,16 +171,16 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 - Andrea Perna  
 - Mattia Zappalà
 
-📧 and.perna99@gmail.com
+📧 and.perna99@gmail.com  
 📧 matty.zapp.99.mz@gmail.com
 
 ---
 
 ## 📎 Resources
 
-- 📘 [Escape.pdf](./Escape.pdf) – Project and room overview (Italian)
-- 🎯 Arduino Puzzle Codes (`*.ino`)
-- 🧩 PCB Designs (EasyEDA projects – not included)
+- 📘 [Escape.pdf](./Escape.pdf) – Overall room description
+- 🧩 Puzzle-specific Arduino codes and schematics
+- 🛠 Custom PCB projects (EasyEDA)
 
 ---
 
