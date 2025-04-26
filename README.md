@@ -1,6 +1,6 @@
 # Arduino Escape Room – *L'Ufficio dello Scienziato*
 
-[![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) [![PCB](https://img.shields.io/badge/PCB-Designed%20with-EasyEDA-green)](https://easyeda.com/)  
+[![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) 
 An interactive Arduino-based escape room featuring real-time puzzles, sensors, actuators, and custom-designed PCBs to create an immersive technological challenge.
 
 ---
@@ -74,6 +74,10 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   <img src="./ObstacleDetection/ObstacleDetection_Schematic.png" height="230"/>
 </p>
 
+📸 Real-world Implementation:
+<p align="center">
+  <img src="./ObstacleDetection/Obstacle_box.png" height="260"/>
+</p>
 ---
 
 ### 🧩 Puzzle 2: **Gli Occhi della Verità** (The Eyes of Truth)
