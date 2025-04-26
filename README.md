@@ -1,4 +1,4 @@
-# Arduino Escape Room – *L'Ufficio dello Scienziato*
+# 🧩 Arduino Escape Room – *L'Ufficio dello Scienziato*
 
 [![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) [![PCB](https://img.shields.io/badge/PCB-Designed%20with-EasyEDA-green)](https://easyeda.com/)  
 An interactive Arduino-based escape room featuring real-time puzzles, sensors, actuators, and custom-designed PCBs to create an immersive technological challenge.
@@ -7,7 +7,10 @@ An interactive Arduino-based escape room featuring real-time puzzles, sensors, a
 
 ## 🧠 About the Project
 
-**L'Ufficio dello Scienziato** ("The Scientist’s Office") is a complete real-world escape room designed around Arduino electronics and fully custom puzzles. Participants must solve complex electronic-based challenges by interacting with **real sensors**, **actuators**, and **programmed puzzles**, all embedded inside a futuristic laboratory environment. Each puzzle integrates custom-built electronic circuits and PCBs designed using **EasyEDA**, ensuring reliable, modular, and professional-grade performance. Creating custom PCBs allowed for **efficient wiring**, **increased robustness**, and **scalable designs**, which are fundamental in embedded interactive systems.
+**L'Ufficio dello Scienziato** ("The Scientist’s Office") is a complete real-world escape room designed around Arduino electronics and fully custom puzzles.  
+Participants must solve complex electronic-based challenges by interacting with **real sensors**, **actuators**, and **programmed puzzles**, all embedded inside a futuristic laboratory environment.  
+Each puzzle integrates custom-built electronic circuits and PCBs designed using **EasyEDA**, ensuring reliable, modular, and professional-grade performance.  
+Creating custom PCBs allowed for **efficient wiring**, **increased robustness**, and **scalable designs**, which are fundamental in embedded interactive systems.
 
 ---
 
@@ -82,10 +85,9 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - Arduino MEGA
 - **Objective**:
   - Players must input the code retrieved from Puzzle 1 into a keypad to unlock a mechanical box.
-  - Two players must simultaneously press buttons mounted on room walls, activating red LEDs that illuminate a hidden message.
-  - A third player must open mechanical "eyes" (servo-controlled shutters) to reveal this hidden clue.
-  - Successful teamwork switches the LEDs from red to blue, unveiling a second hidden message containing the final code needed.
-  - If players fail to maintain button pressure, the system resets, turning off lights and closing the eyes, requiring players to retry.
+  - Two players must simultaneously press wall buttons to reveal a red-lit hidden message.
+  - A third player operates mechanical "eyes" (servo-controlled shutters) to expose the message.
+  - After correctly solving the first clue, the system switches LEDs to blue, unveiling the final hidden solution.
 
 🔧 Related Files:  
 [`Bolobox/Bolobox.ino`](./Bolobox/Bolobox.ino)
@@ -101,14 +103,16 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 ### 🧩 Puzzle 3: **Il Cifratempo** (The Cipher Time)
 
 - **Hardware**:
-  - Stepper motor
+  - 28BYJ-48 Stepper Motor + ULN2003 driver board
   - IR Receiver
   - Arduino Nano
 - **Objective**:
-  - Players must operate a suspended wall clock controlled via a Sony IR remote.
-  - Among several misleading buttons, only the correct remote button (hidden clue: a camera icon) triggers a precise sequence of clock hand movements.
-  - Players must recognize a specific time pattern from the clock.
-  - Using a Caesar cipher decoding book provided in the room, players translate the numerical sequence into a keyword.
+  - Players interact with a modified analog clock, whose hands are motor-controlled via an IR remote.
+  - Only by pressing the correct remote button (hinted via hidden symbols) does the clock perform a meaningful movement.
+  - Different buttons trigger distinct trajectories:  
+    ➔ **Sigmoid trajectory** for smooth accelerations  
+    ➔ **Trapezoidal trajectory** for constant speed intervals
+  - Players must recognize the resulting time pattern and decode it using a Caesar cipher, leading to a hidden keyword.
 
 🔧 Related Files:  
 [`IR_Clock/IR_Clock.ino`](./IR_Clock/IR_Clock.ino)
@@ -119,6 +123,10 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   <img src="./IR_Clock/Clock_Schematic.png" height="230"/>
 </p>
 
+**🛠 Motor Used**:  
+- [28BYJ-48 5V Stepper Motor + ULN2003 Driver Board](https://www.amazon.it/dp/B09KLJRL53/ref=sspa_dk_detail_6?psc=1)  
+- Compact, precise, and ideal for synchronized clock hand control using Arduino.
+
 ---
 
 ### 🧩 Puzzle 4: **La Tastiera del Destino** (The Destiny Keyboard)
@@ -128,12 +136,10 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - LCD Display
   - Solenoid Lock (Elettroserratura)
   - Arduino Nano
-
 - **Objective**:
-  - Players receive a code drawn by the **DIY Robot** on a whiteboard (hidden in the previous step).
-  - They must type the correct sequence into a modified Arduino-controlled PS2 keyboard.
-  - As players type, feedback is provided through the LCD display.
-  - Entering the correct combination triggers an electronic solenoid lock, physically releasing the final key to exit the room.
+  - After receiving a code drawn by the DIY Robot on the whiteboard, players must input the correct sequence into a modified Arduino-controlled PS2 keyboard.
+  - The LCD provides live feedback while typing.
+  - Correctly entering the password triggers a solenoid lock to release the physical key needed to exit.
 
 🔧 Related Files:  
 [`Keyboard/Keyboard.ino`](./Keyboard/Keyboard.ino)
@@ -152,21 +158,22 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 - **HC-SR04 Ultrasonic Sensors**
 - **LCD Displays 16x2**
 - **RGB LEDs and Standard LEDs**
-- **Servo Motors and Stepper Motors**
-- **Sony Remote Control + IR Receiver**
-- **PS2 Keyboard modified**
-- **Solenoid Lock (Elettroserratura)**
-- **Custom PCB Design with EasyEDA**
+- **Servo Motors and 28BYJ-48 Stepper Motors**
+- **ULN2003 Driver Boards**
+- **Sony Remote Control + IR Receiver Modules**
+- **Modified PS2 Keyboards**
+- **Solenoid Locks (Elettroserratura)**
+- **Custom PCB Designs with EasyEDA**
 
 ---
 
 ## 🧪 Key Learning Outcomes
 
-- Embedded system design for real-world game experiences.
-- PCB optimization for high-reliability setups.
-- Synchronized real-time control between multiple players.
-- Application of IR communication, keypad scanning, and motor control.
-- Interactive storytelling using electronics.
+- Full-stack embedded system design for immersive experiences.
+- Real-time multi-sensor interaction and synchronization.
+- PCB design for robust embedded control using EasyEDA.
+- Wireless IR communication, programmable trajectory control, and real-time feedback systems.
+- Engineering complex interactive storylines through electronics.
 
 ---
 
@@ -188,7 +195,7 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 ## 📎 Resources
 
-- 📘 [Escape.pdf](./Escape.pdf) – Full room and puzzles description
+- 📘 [Escape.pdf](./Escape.pdf) – Room and puzzle descriptions
 - 🛠 Arduino Puzzle Codes (`*.ino`)
 - 📷 PCB Layouts and Electronic Schematics (EasyEDA)
 
