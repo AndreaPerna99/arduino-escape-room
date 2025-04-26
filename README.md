@@ -31,6 +31,7 @@ Creating custom PCBs allowed for **efficient wiring**, **increased robustness**,
 │  ├ 🖼️ Keyboard_PCB.png
 │  ├ 🖼️ Keyboard_Schematic.png
 │  ├ 🖼️ DrawingRobot.jpg
+│  ├ 🖼️ PS2Keyboard.jpg
 ├ 📁 ObstacleDetection/
 │  ├ 🧩 ObstacleDetection.ino
 │  ├ 🖼️ ObstacleDetection_PCB.png
@@ -159,6 +160,7 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 📸 Real-world Implementation:
 <p align="center">
   <img src="./Keyboard/DrawingRobot.jpg" height="260"/>
+  <img src="./Keyboard/PS2Keyboard.jpg" height="260"/>
 </p>
 
 ---
