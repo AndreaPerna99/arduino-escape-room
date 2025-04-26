@@ -24,6 +24,7 @@ An interactive Arduino-based escape room featuring real-time puzzles, sensors, a
 │  ├ 🖼️ Clock_PCB.png
 │  ├ 🖼️ Clock_Schematic.png
 │  ├ 🖼️ ModifiedClock.jpg
+│  ├ 🖼️ NemaMotor.jpg
 ├ 📁 Keyboard/
 │  ├ 🧩 Keyboard.ino
 │  ├ 🖼️ Keyboard_PCB.png
@@ -131,6 +132,7 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 📸 Real-world Implementation:
 <p align="center">
   <img src="./IR_Clock/ModifiedClock.jpg" height="260"/>
+  <img src="./IR_Clock/NemaMotor.jpg" height="260"/>
 </p>
 
 **🛠 Motor Used**:  
