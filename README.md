@@ -34,7 +34,7 @@ Creating custom PCBs allowed for **efficient wiring**, **increased robustness**,
 │   ├── 🧩 ObstacleDetection.ino
 │   ├── 🖼️ ObstacleDetection_PCB.png
 │   ├── 🖼️ ObstacleDetection_Schematic.png
-│   ├── 🖼️ Obstacle_box.png
+│   ├── 🖼️ Obstacle_box.jpg
 ├── 📘 Escape.pdf
 ├── 📄 README.md
 ```
@@ -76,7 +76,7 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 📸 Real-world Implementation:
 <p align="center">
-  <img src="./ObstacleDetection/Obstacle_box.png" height="260"/>
+  <img src="./ObstacleDetection/Obstacle_box.jpg" height="260"/>
 </p>
 ---
 
