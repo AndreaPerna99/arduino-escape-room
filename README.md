@@ -1,4 +1,4 @@
-# 🧩 Arduino Escape Room – *L'Ufficio dello Scienziato*
+# Arduino Escape Room – *L'Ufficio dello Scienziato*
 
 [![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) [![PCB](https://img.shields.io/badge/PCB-Designed%20with-EasyEDA-green)](https://easyeda.com/)  
 An interactive Arduino-based escape room featuring real-time puzzles, sensors, actuators, and custom-designed PCBs to create an immersive technological challenge.
