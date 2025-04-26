@@ -7,10 +7,7 @@ An interactive Arduino-based escape room featuring real-time puzzles, sensors, a
 
 ## 🧠 About the Project
 
-**L'Ufficio dello Scienziato** ("The Scientist’s Office") is a complete real-world escape room designed around Arduino electronics and fully custom puzzles.  
-Participants must solve complex electronic-based challenges by interacting with **real sensors**, **actuators**, and **programmed puzzles**, all embedded inside a futuristic laboratory environment.  
-Each puzzle integrates custom-built electronic circuits and PCBs designed using **EasyEDA**, ensuring reliable, modular, and professional-grade performance.  
-Creating custom PCBs allowed for **efficient wiring**, **increased robustness**, and **scalable designs**, which are fundamental in embedded interactive systems.
+**L'Ufficio dello Scienziato** ("The Scientist’s Office") is a complete real-world escape room designed around Arduino electronics and fully custom puzzles. Participants must solve complex electronic-based challenges by interacting with **real sensors**, **actuators**, and **programmed puzzles**, all embedded inside a futuristic laboratory environment. Each puzzle integrates custom-built electronic circuits and PCBs designed using **EasyEDA**, ensuring reliable, modular, and professional-grade performance. Creating custom PCBs allowed for **efficient wiring**, **increased robustness**, and **scalable designs**, which are fundamental in embedded interactive systems.
 
 ---
 
@@ -26,6 +23,7 @@ Creating custom PCBs allowed for **efficient wiring**, **increased robustness**,
 │  ├ 🧩 IR_Clock.ino
 │  ├ 🖼️ Clock_PCB.png
 │  ├ 🖼️ Clock_Schematic.png
+│  ├ 🖼️ ModifiedClock.jpg
 ├ 📁 Keyboard/
 │  ├ 🧩 Keyboard.ino
 │  ├ 🖼️ Keyboard_PCB.png
@@ -128,6 +126,11 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 <p align="center">
   <img src="./IR_Clock/Clock_PCB.png" height="230"/>
   <img src="./IR_Clock/Clock_Schematic.png" height="230"/>
+</p>
+
+📸 Real-world Implementation:
+<p align="center">
+  <img src="./IRClock/ModifiedClock.jpg" height="260"/>
 </p>
 
 **🛠 Motor Used**:  
