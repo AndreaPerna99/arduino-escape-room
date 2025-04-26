@@ -1,4 +1,4 @@
-# Arduino Escape Room – *L'Ufficio dello Scienziato*
+![DrawingRobot](https://github.com/user-attachments/assets/fa791598-44ac-40f0-82ee-c1eab5c9a800)# Arduino Escape Room – *L'Ufficio dello Scienziato*
 
 [![Arduino](https://img.shields.io/badge/Platform-Arduino-blue?logo=arduino)](https://www.arduino.cc/) 
 An interactive Arduino-based escape room featuring real-time puzzles, sensors, actuators, and custom-designed PCBs to create an immersive technological challenge.
@@ -18,25 +18,26 @@ Creating custom PCBs allowed for **efficient wiring**, **increased robustness**,
 
 ```
 📦 Arduino-Escape-Room/
-├── 📁 Bolobox/
-│   ├── 🧩 Bolobox.ino
-│   ├── 🖼️ Bolobox_PCB.png
-│   ├── 🖼️ Bolobox_Schematic.png
-├── 📁 IR_Clock/
-│   ├── 🧩 IR_Clock.ino
-│   ├── 🖼️ Clock_PCB.png
-│   ├── 🖼️ Clock_Schematic.png
-├── 📁 Keyboard/
-│   ├── 🧩 Keyboard.ino
-│   ├── 🖼️ Keyboard_PCB.png
-│   ├── 🖼️ Keyboard_Schematic.png
-├── 📁 ObstacleDetection/
-│   ├── 🧩 ObstacleDetection.ino
-│   ├── 🖼️ ObstacleDetection_PCB.png
-│   ├── 🖼️ ObstacleDetection_Schematic.png
-│   ├── 🖼️ Obstacle_box.jpg
-├── 📘 Escape.pdf
-├── 📄 README.md
+├ 📁 Bolobox/
+│  ├ 🧩 Bolobox.ino
+│  ├ 🖼️ Bolobox_PCB.png
+│  ├ 🖼️ Bolobox_Schematic.png
+├ 📁 IR_Clock/
+│  ├ 🧩 IR_Clock.ino
+│  ├ 🖼️ Clock_PCB.png
+│  ├ 🖼️ Clock_Schematic.png
+├ 📁 Keyboard/
+│  ├ 🧩 Keyboard.ino
+│  ├ 🖼️ Keyboard_PCB.png
+│  ├ 🖼️ Keyboard_Schematic.png
+│  ├ 🖼️ DrawingRobot.jpg
+├ 📁 ObstacleDetection/
+│  ├ 🧩 ObstacleDetection.ino
+│  ├ 🖼️ ObstacleDetection_PCB.png
+│  ├ 🖼️ ObstacleDetection_Schematic.png
+│  ├ 🖼️ Obstacle_box.jpg
+├ 📘 Escape.pdf
+├ 📄 README.md
 ```
 
 ---
@@ -153,6 +154,11 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 <p align="center">
   <img src="./Keyboard/Keyboard_PCB.png" height="230"/>
   <img src="./Keyboard/Keyboard_Schematic.png" height="230"/>
+</p>
+
+📸 Real-world Implementation:
+<p align="center">
+  <img src="./Keyboard/DrawingRobot.jpg" height="260"/>
 </p>
 
 ---
