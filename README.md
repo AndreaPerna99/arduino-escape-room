@@ -62,30 +62,8 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
   - Arduino UNO
 - **Objective**:
   - Players must clear obstacles detected by four smart boxes.
-  - Solve a 4-variable system displayed on LCDs to unlock the next stage.
-
-🔧 Related Files:  
-[`Bolobox/Bolobox.ino`](./Bolobox/Bolobox.ino)
-
-📸 PCB and Schematic:
-<p align="center">
-  <img src="./Bolobox/Bolobox_PCB.png" height="230"/>
-  <img src="./Bolobox/Bolobox_Schematic.png" height="230"/>
-</p>
-
----
-
-### 🧩 Puzzle 2: **Gli Occhi della Verità** (The Eyes of Truth) – **Obstacle Detection Module**
-
-- **Hardware**:
-  - Servo motors
-  - Push buttons
-  - RGB LEDs
-  - LCD Displays
-  - Arduino MEGA
-- **Objective**:
-  - After entering the first code, players trigger wall buttons simultaneously.
-  - Sensors validate coordination to reveal hidden messages.
+  - Each box, when cleared, reveals part of a mathematical equation displayed on an LCD screen.
+  - Solving the full 4-variable system provides a numeric code essential for the next puzzle.
 
 🔧 Related Files:  
 [`ObstacleDetection/ObstacleDetection.ino`](./ObstacleDetection/ObstacleDetection.ino)
@@ -98,15 +76,43 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 ---
 
+### 🧩 Puzzle 2: **Gli Occhi della Verità** (The Eyes of Truth)
+
+- **Hardware**:
+  - Servo motors
+  - Push buttons
+  - RGB LEDs
+  - LCD Display
+  - Arduino MEGA
+- **Objective**:
+  - Players must input the code retrieved from Puzzle 1 into a keypad to unlock a mechanical box.
+  - Two players must simultaneously press buttons mounted on room walls, activating red LEDs that illuminate a hidden message.
+  - A third player must open mechanical "eyes" (servo-controlled shutters) to reveal this hidden clue.
+  - Successful teamwork switches the LEDs from red to blue, unveiling a second hidden message containing the final code needed.
+  - If players fail to maintain button pressure, the system resets, turning off lights and closing the eyes, requiring players to retry.
+
+🔧 Related Files:  
+[`Bolobox/Bolobox.ino`](./Bolobox/Bolobox.ino)
+
+📸 PCB and Schematic:
+<p align="center">
+  <img src="./Bolobox/Bolobox_PCB.png" height="230"/>
+  <img src="./Bolobox/Bolobox_Schematic.png" height="230"/>
+</p>
+
+---
+
 ### 🧩 Puzzle 3: **Il Cifratempo** (The Cipher Time)
 
 - **Hardware**:
   - Stepper motor
-  - IR Receiver (Sony Remote Control)
+  - IR Receiver
   - Arduino Nano
 - **Objective**:
-  - Control a frozen clock via infrared.
-  - Decrypt the movement pattern into a hidden password.
+  - Players must operate a suspended wall clock controlled via a Sony IR remote.
+  - Among several misleading buttons, only the correct remote button (hidden clue: a camera icon) triggers a precise sequence of clock hand movements.
+  - Players must recognize a specific time pattern from the clock.
+  - Using a Caesar cipher decoding book provided in the room, players translate the numerical sequence into a keyword.
 
 🔧 Related Files:  
 [`IR_Clock/IR_Clock.ino`](./IR_Clock/IR_Clock.ino)
@@ -119,14 +125,19 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 ---
 
-### 🧩 Puzzle 4: **Il Disegno del Destino** (The Destiny Drawing)
+### 🧩 Puzzle 4: **La Tastiera del Destino** (The Destiny Keyboard)
 
 - **Hardware**:
-  - DIY Drawing Robot
-  - Magnetic whiteboard
-  - Arduino Controller
+  - Modified PS2 Keyboard
+  - LCD Display
+  - Solenoid Lock (Elettroserratura)
+  - Arduino Nano
+
 - **Objective**:
-  - Deploy a robot that autonomously draws a clue leading to the final exit.
+  - Players receive a code drawn by the **DIY Robot** on a whiteboard (hidden in the previous step).
+  - They must type the correct sequence into a modified Arduino-controlled PS2 keyboard.
+  - As players type, feedback is provided through the LCD display.
+  - Entering the correct combination triggers an electronic solenoid lock, physically releasing the final key to exit the room.
 
 🔧 Related Files:  
 [`Keyboard/Keyboard.ino`](./Keyboard/Keyboard.ino)
@@ -145,24 +156,27 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 - **HC-SR04 Ultrasonic Sensors**
 - **LCD Displays 16x2**
 - **RGB LEDs and Standard LEDs**
-- **Stepper Motors and Servo Motors**
-- **IR Receiver Modules (Sony Remote)**
+- **Servo Motors and Stepper Motors**
+- **Sony Remote Control + IR Receiver**
+- **PS2 Keyboard modified**
+- **Solenoid Lock (Elettroserratura)**
 - **Custom PCB Design with EasyEDA**
 
 ---
 
 ## 🧪 Key Learning Outcomes
 
-- Full-stack embedded system development for an interactive experience.
-- PCB design to improve reliability and minimize wiring errors.
-- Real-time control systems, IR communication, ultrasonic obstacle detection, and stepper motor management.
-- Engineering storytelling and puzzle integration.
+- Embedded system design for real-world game experiences.
+- PCB optimization for high-reliability setups.
+- Synchronized real-time control between multiple players.
+- Application of IR communication, keypad scanning, and motor control.
+- Interactive storytelling using electronics.
 
 ---
 
 ## 📅 Year
 
-2024/2025
+2023
 
 ---
 
@@ -178,9 +192,9 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 
 ## 📎 Resources
 
-- 📘 [Escape.pdf](./Escape.pdf) – Overall room description
-- 🧩 Puzzle-specific Arduino codes and schematics
-- 🛠 Custom PCB projects (EasyEDA)
+- 📘 [Escape.pdf](./Escape.pdf) – Full room and puzzles description
+- 🛠 Arduino Puzzle Codes (`*.ino`)
+- 📷 PCB Layouts and Electronic Schematics (EasyEDA)
 
 ---
 
