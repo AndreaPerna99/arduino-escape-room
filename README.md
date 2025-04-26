@@ -19,6 +19,7 @@ An interactive Arduino-based escape room featuring real-time puzzles, sensors, a
 │  ├ 🧩 Bolobox.ino
 │  ├ 🖼️ Bolobox_PCB.png
 │  ├ 🖼️ Bolobox_Schematic.png
+│  ├ 🖼️ BoxInside.jpg
 ├ 📁 IR_Clock/
 │  ├ 🧩 IR_Clock.ino
 │  ├ 🖼️ Clock_PCB.png
@@ -102,6 +103,11 @@ Each solved puzzle brings players closer to unveiling the secrets buried deep wi
 <p align="center">
   <img src="./Bolobox/Bolobox_PCB.png" height="230"/>
   <img src="./Bolobox/Bolobox_Schematic.png" height="230"/>
+</p>
+
+📸 Real-world Implementation:
+<p align="center">
+  <img src="./Bolobox/BoxInside.jpg" height="260"/>
 </p>
 
 ---
